@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.homePage {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2rem;
+}
+
+.navBar .leftNav img {
+    height: 125px;
+}
+
+.midNav {
+    display: flex;
+    gap: 2rem;
+}
+
+.midNav a {
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.midNav h2 span {
+    color: red;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #7850CB;
+    color: aliceblue;
+    padding: 1rem 2.3rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+
+button::before {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #1f1f1f;
+    position: absolute;
+    transform: scaleX(0);
+    z-index: -1;
+    transform-origin: left;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+
+button:hover::before {
+    transform: scaleX(1);
+}
+
+.rightNav button:hover {
+    background-color: #222;
+}
+
+.rightNav button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navBoxs {
+    position: relative;
+    transition: all 1s linear ease-in-out;
+
+}
+
+.navBox {
+    position: absolute;
+    top: 50%;
+    padding-bottom: 1.5rem;
+    display: none;
+    width: 350px;
+    line-height: 2.5rem;
+    padding-top: 2rem;
+    border-bottom: 5px solid blue;
+    border-radius: 5px;
+}
+
+.navBox li {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.navBoxs:hover .navBox {
+    display: block;
+}
+
+
+.subNavBox {
+    display: none;
+    position: absolute;
+    right: -5%;
+    top: 20%;
+    background-color: #fff;
+    border-bottom: 5px solid blue;
+    padding-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+.navSubitem:hover .subNavBox {
+    display: block;
+}
+
+.item-2 {
+    top: 60%;
+}
+
+.item-3 {
+    right: -20%;
+    top: 65%;
+}
+
+.item-4 {
+    top: 80%;
+    right: -45%;
+}
+
+
+
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+
+
+/* Dsigning the about page  */
+
+.aboutPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7F55DA;
+    border-radius: 5px;
+}
+
+
+.leftAbout {
+    height: 500px;
+    width: 60%;
+}
+
+.leftAbout img {
+    height: 100%;
+
+}
+
+.rightAbout {
+    background-color: #f1efeff4;
+    border-radius: 10px;
+    height: 80%;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    margin-right: 2rem;
+}
+
+
+.rightAbout h1 {
+    font-size: 2rem;
+    color: #7850CB;
+}
+
+.rightAbout h2 {
+    color: #444;
+    font-size: 3rem;
+}
+
+.rightAbout p {
+    color: #333;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+
+.aboutBox {
+    background-color: #fff;
+    display: flex;
+    gap: 2rem;
+    width: 500px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.aboutBox h3 {
+    margin-top: -1rem;
+}
+
+.rightAbout button {
+    border-radius: 5px;
+    border: none;
+}
+
+
+.aboutBox img {
+    height: 80px;
+    padding: 10px;
+    box-shadow: 0 0 2px #33333338;
+    /* border: 1px solid rgba(128, 128, 128, 0.729); */
+}
+
+
+
+/* Program page */
+
+
+.programPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7950cb18;
+    padding-bottom: 2rem;
+}
+
+.topProgram {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topProgram h1 {
+    color: #7F55DA;
+    margin-top: 3rem;
+}
+
+.topProgram h2 {
+    margin-top: -8px;
+    font-size: 4rem;
+    width: 60%;
+    text-align: center;
+}
+
+.botProgram {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+}
+
+.programCard {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    transition: all .5s ease;
+    letter-spacing: 1px;
+    padding-bottom: 2rem;
+}
+
+.programCard img {
+    height: 100px;
+}
+
+.programCard p {
+    font-size: 1.2rem;
+}
+
+.programCard button {
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: #7850CB;
+    color: #fff;
+}
+
+.programCard button:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+
+.programCard:hover {
+    background-color: #0E5AF2;
+    color: #fff;
+}
+
+
+/* Pro pics styling */
+
+
+.proPics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.picsHead {
+    color: #7850CB;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+
+.picsCards {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.picsCard {
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 1s ease;
+    border-bottom: 7px solid transparent;
+}
+
+.picsCard:hover {
+    border-bottom: 7px solid #0E5AF2;
+    box-shadow: 0 0 5px #2222222c;
+}
+
+.picsCard button {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.picsCard button:hover {
+    background-color: #222;
+}
+
+.picsCardHead {
+    display: flex;
+    align-items: center;
+}
+
+.picsCard>p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555555b5;
+}
+
+.picsCardDetails p {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+
+/* Colab section */
+
+.colabSec {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.colabSec h2 {
+    color: #7850CB;
+    margin-top: 3rem;
+}
+
+.colabSec h1 {
+    margin-top: -1rem;
+    font-size: 3.5rem;
+}
+
+.colabSec img {
+    width: 100%;
+}
+
+
+
+/* Something page */
+
+.somethingPage {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    background: linear-gradient(to bottom, #7C53D2, #4A327E);
+}
+
+.leftSomething {
+    width: 45%;
+}
+
+
+.rightSomething>h2 span {
+    font-size: 2rem;
+}
+
+.rightSomething {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    height: 500px;
+    margin-left: 5rem;
+    border-radius: 5px;
+}
+
+.rightSomething>h2 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.rightSomething>h1 {
+    font-size: 3rem;
+}
+
+.somethingBox {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.somethingBox h1 {
+    font-size: 1.5rem;
+}
+
+
+/* Connection page */
+
+.connectionPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5rem;
+}
+
+.leftCon {
+    width: 50%;
+}
+
+
+.leftCon>h2 {
+    color: #4A327E;
+}
+
+
+.leftCon h2 span {
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.leftCon>h1 {
+    font-size: 3.5rem;
+    margin-top: -1.5rem;
+}
+
+.leftCon>p {
+    margin-bottom: 3rem;
+    color: #000000bf;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.rightCon {
+    width: 55%;
+}
+
+.leftCon label {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+
+.progressBar {
+    border: 1px solid gray;
+    height: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0px 5px;
+}
+
+.progressBar p {
+    border: 1px solid gray;
+    height: 10px;
+    background: #553990e1;
+    border-radius: 20px;
+    width: 89%;
+}
+
+.progressBar-2 p {
+    width: 32%;
+}
+
+.progressBar-3 p {
+    width: 100%;
+}
+
+
+/* tempCont */
+
+
+.tempCont {
+    background-color: #533592;
+    color: #fff;
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    overflow: hidden;
+}
+
+
+.temp {
+    background-color: #c1b2e156;
+    height: 500px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.tempCont p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    width: 60%;
+    font-weight: bold;
+}
+
+.tempCont h1 {
+    font-size: 4rem;
+
+}
+
+.temp-2 {
+    height: 220px;
+    border-radius: 10px;
+    right: 8%;
+    background-color: #ac8eeca9;
+}
+
+.tempCont button {
+    width: 200px;
+    z-index: 1;
+}
+
+
+/*  Service Page */
+
+
+.servicesPage,
+.newsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.topServices,
+.topNews {
+    text-align: center;
+}
+
+.topServices h2,
+.topNews h2 {
+    color: #7850CB;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.topServices h1 {
+    margin-top: -2rem;
+    font-size: 3rem;
+
+}
+
+.BotServices,
+.botNews {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceBox,
+.newsBox {
+    width: 280px;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.serviceBox:hover {
+    box-shadow: 0 0 5px #2222221a;
+    border-bottom: 5px solid #0E5AF2;
+}
+
+.serviceBox p {
+    color: #000000cc;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.serviceBox:nth-child(2),
+.serviceBox:nth-child(4) {
+    margin-top: 8rem;
+}
+
+
+.botNews{
+     gap: 8rem;
+     padding-top: 3rem;
+}
+.newsBox img {
+    height: 250px;
+}
+
+.topNews h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.topNews h1{
+    margin-top: -1rem;
+}
+
+
+.newsBox p{
+    font-size: 1.2rem;
+}
+
+.newsBox h3{
+    color: #0E5AF2;
+}
+
+.botNews:nth-child(2){
+    margin-top: -3rem;
+}
+
+
+/* Footer in our page */
+
+footer{
+    /* display: flex;    */
+    /* text-align: center; */
+    padding: 2rem;
+    background-color: #9776E0;
+    color: #fff;
+}
+
+.topFooter{
+    display: flex;
+    gap: 2rem;
+}
+
+.footerItem{
+    width: 500px;
+}
+
+.footerItem h2{
+    font-size: 2rem;
+}
+
+.footerItem p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.topFooter ul{
+    width: 250px;
+}
+
+
+.topFooter ul li{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    transition: all.5s ease;
+    cursor: pointer;
+}
+.topFooter ul li:hover{
+    color: #000;
+}
+
+
+.footerLine{
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.botFooter{
+    text-align: center;
+}
+
+.botFooter p{
+    font-size: 1.3rem;
+}

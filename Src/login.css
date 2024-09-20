@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.mainPage {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginPage, .signupPage {
+    width: 300px;
+    padding: 2rem;
+}
+
+.loginPage{
+    display: none;
+}
+
+h1 span {
+    color: #0E5AF2;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0E5AF2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0a47c4;
+}
+
+p {
+    text-align: center;
+}
+
+.social-options p {
+    cursor: pointer;
+    color: #0E5AF2;
+}
+
+u {
+    cursor: pointer;
+}
+
+.otherLogin p{
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.otherLogin img{
+    height: 22px;
+}
+
+#google{
+    height: 25px;
+    margin-right: -10px;
+}
+
+
+
